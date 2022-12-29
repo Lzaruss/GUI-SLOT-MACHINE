@@ -21,13 +21,13 @@ The JLabel class is a class from the Java Swing UI library that is used to displ
 
 The ActionListener interface is a Java interface that is used to detect actions performed by the user in the UI. In this project, it is used to detect when a button is clicked.
 
-CLASS CELL
+**CLASS CELL**
 
 The Cell class is a helper class that represents each cell of the slot machine. This class contains a row, a column, a value, and a label. It also has a visited variable that indicates whether the cell has been visited and a numValues variable that keeps track of how many different values there are in the cell.
 
 The Cell class has a constructor that initializes the variables of the cell with the values passed as parameters. It also has a randomImage method that is used to assign a random image to the cell. The randomNumber method is a helper method that is used to generate a random number with a specific probability distribution for each of the images.
 
-CLASS JUGAR
+**CLASS JUGAR**
 
 The "Jugar" class is a class that extends the Thread class and is used to perform the game logic. This class contains several variables such as a matrix of cells, an array of values, an array of number of values, an array of bets, an array of prizes, an integer that keeps the last prize obtained, several buttons and labels, and a dialog.
 
@@ -37,7 +37,7 @@ The Dado class is a class that extends the Thread class and is used to simulate 
 
 The Contador class is a class that extends the Thread class and is used to display the winnings or credits counter on the screen. This class contains a label and a variable that are used to update the screen and control the flow of the game.
 
-CLASS EXPLOSION
+**CLASS EXPLOSION**
 
 The "Explosion" class is a subclass of the Thread class in Java. It has two member variables: a Cell object called "c" and two ImageIcon objects called "exp" and "expon".
 
@@ -45,7 +45,7 @@ The class has a constructor that takes in a Cell object and initializes the "c" 
 
 The class also has an overridden "run" method that displays the explosion image on the cell for a brief period of time and then removes it. The method does this by changing the icon of the cell's JLabel object (called "neigh") and then sleeping for a set amount of time before changing it back to its original icon. If an InterruptedException is thrown, it is caught and a RuntimeException is thrown in its place.
 
-CLASS DADO
+**CLASS DADO**
 
 "Dado" is a Java class that represents a die or a dice. It extends the Thread class and has a number of attributes such as an ImageIcon object called "exp", a JLabel object called "c" which represents the button of the die, two more JLabel objects called "ganancias" and "credito", and a JButton object called "start". The class also has an integer array called "premios" that stores the prizes for each possible value of the die, and an integer called "valor" to store the value of the prize. It also has a Contador object called "contador" which is used to refresh the value of the prize. The class has a method called "changeImage" that changes the image of the JLabel object "c", and a method called "run" which simulates the rolling of the die. The "run" method generates a random number between 0 and 5 which represents the value of the die, and it updates the image of the die accordingly. It also calculates the prize based on the value of the die, and updates the value of the "ganancias" and "credito" JLabel objects.
 
